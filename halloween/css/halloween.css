@@ -9,7 +9,7 @@ padding: 0;}
     position: absolute;
     right: 493px;
     top: 32px;
-    background-image: url(/img/foto_fondo.jpg);
+    background-image: url("./img/foto_fondo.jpg");
     font-weight: bolder;
     color: rgb(54, 50, 50);
     padding: 10px;
