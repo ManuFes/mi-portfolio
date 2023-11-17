@@ -5,21 +5,42 @@
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/halloween.css">
+    <script src="./js/index.js"></script>
     <title>Halloween</title>
 </head>
 <body>
     <!-- This exercise is made just for fun wahahahaha!!! -->
     <!-- WARNING: It´s not RESPONSIVE, only for Computer -->
     <!-- I have to search for an image, wallpaper image -->
+    
     <div id="scenario">
-        <!--we -->
-        
-        <div id="ghost" onmouseover="show('ghost')" onmouseout="hide('ghost')">
-            <img src="img/ghost.gif" alt="ghost">
-
+        <audio id="campanas" src="/sound/halloween-bellshalloween.mp3"></audio>
+        <audio id="trueno" src="/sound/trueno.mp3"></audio>
+        <audio id="risa-mujer" src="/sound/risa_mujer.mp3"></audio>
+        <div id="texto">
+            <h1>Haunted Halloween Party!</h1>
+            <p>You are invited to our spooky Halloween party.</p>
+            <p>Date: October 31, 2023</p>
+            <p>Time: 7:00 PM</p>
+            <p>Location: Haunted Mansion, Shadow Street</p>
+            <p>Dress up in your best costume and get ready for a night of scares and fun.</p>
+            <p>We hope to see you there!</p>
         </div>
-        <div id="pumpkin" onmouseover="show('worm')" onmouseout="hide('worm')">
-            <img src="img/worm.gif" alt="worm">
+        
+        <div id="ghost" onmouseover="show('ghost-img')" onmouseleave="hide('ghost-img')">
+            <img id="ghost-img" src="img/ghost.gif" alt="ghost1">
+        </div>
+
+        <div id="campanasdiv" onmouseover="sound('campanas')" onmouseleave="silence('campanas')"></div>
+        <div id="truenodiv" onmouseover="sound('trueno')" onmouseleave="silence('trueno')"></div>
+        <div id="risa-mujerdiv" onmouseover="sound('risa-mujer')" onmouseleave="silence('risa-mujer')"></div>
+        
+        <div id="sonrisa" onmouseover="show('sonrisa-img')" onmouseout="hide('sonrisa-img')">
+            <img id="sonrisa-img" src="img/sonrisa malevola.jpg" alt="sonrisa-img">
+        </div>
+
+        <div id="zombie" onmouseover="show('zombie-img')" onmouseout="hide('zombie-img')">
+            <img id="zombie-img" src="img/zombie.gif" alt="zombie">
         </div>
     </div>
 </body>

@@ -4,39 +4,96 @@
 body{margin: 0;
 padding: 0;}
 
-
+#texto{
+    border-radius: 30px;
+    position: absolute;
+    right: 493px;
+    top: 32px;
+    background-image: url(/img/foto_fondo.jpg);
+    font-weight: bolder;
+    color: rgb(54, 50, 50);
+    padding: 10px;
+    text-align: center;
+}
 
 /*scenario*/
-#scenario {width: 1536px;
+#scenario {
+    position: relative;
+width: 1536px;
 height: 675px;
 background-image: url(".././img/Fondo_Grande_Halloween.webp");
 background-position: center;  /*gracias alvaro*/
-margin: auto;}
+margin: auto;
+}
 
 #ghost{
     width: 170px ;
     height: 250px;
-    border: 2px solid brown;
     position: absolute;
     top: 250px;
     left: 245px;
 }
+#sonrisa-img{
+    
+    width: 111px;
+    height: 100px;
+    visibility: hidden;
+    
+}
+#sonrisa{
+    height: 111px;
+    right: 70px;
+    top: 131px;
+    width: 111px;
+    position: absolute;
+}
 
-#pumpkin img {
-    border: 2px solid greenyellow;
+#zombie-img{
+    
+    width: 79px;
+    height: 80px;
+    visibility: hidden;
+    transform: scaleX(-1);
+    
 }
+#zombie{
+    height: 111px;
+    right: 390px;
+    top: 270px;
+    width: 111px;
+    position: absolute;
+}
+
+#campanasdiv{
+    left: 468px;
+    position: absolute;
+    width: 559px;
+    height: 309px;
+}
+
+#truenodiv{
+    left: 0;
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 450px;
+    height: 300px;
+}
+
+#risa-mujerdiv{
+    right: 200px;
+    top: 50px;
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 309px;
+}
+
 #ghost img {
-    border: 2px solid beige;
+    transform: scaleX(-1);
+    /* border: 2px solid beige; */
+    visibility: hidden;
     width: 280px ;
-    height: 250px;
+    height: 246px;
     position: absolute;
-    right: 2px;
-}
-#pumpkin{
-    width: 350px ;
-    height: 330px;
-    border: 2px solid white;
-    position: absolute;
-    bottom: 10px;
-    right: 0px;
+    right: -132px;
 }
